@@ -1,8 +1,36 @@
+$input-normal: rgba(0, 0, 0, 0.2);
+$input-error: #ff5722;
+$input-active: #448aff;
+
 .c-input{
   border: 0;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   outline: none;
   width: 100%;
   font-size: 16px;
   height: 32px;
+}
+.c-input-normal{
+  border-bottom: 1px solid $input-normal;
+}
+.c-input-error{
+  border-bottom: 2px solid $input-error;
+}
+.c-input-active{
+  border-bottom: 2px solid $input-active;
+}
+
+.o-input-error-wrapper{
+  p{
+    color: $input-error;
+    font-size: 12px;
+    margin: 2px 0;
+  }
+}
+
+.o-input-active-wrapper{
+  p{
+    color: $input-active;
+    font-size: 12px;
+    margin: 2px 0;
+  }
 }

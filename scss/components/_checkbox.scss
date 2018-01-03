@@ -1,0 +1,25 @@
+$background-label-checkbox-active: #448aff;
+$background-label-checkbox-normal: #ffffff;
+$border-label-checkbox-normal: #cccccc;
+$border-label-checkbox-active: #448aff;
+
+.o-checkbox{
+  input[type="checkbox"]{
+    display: none;
+  }
+  .o-checkbox__label{
+   display: block;
+   width: 16px;
+   height: 16px;
+   border: 2px solid $border-label-checkbox-normal;
+   border-radius: 2px;
+   background-color: $background-label-checkbox-normal;
+   &:hover{
+     cursor: pointer;
+   }
+  }
+  input[type="checkbox"]:checked + .o-checkbox__label{
+    background-color: $background-label-checkbox-active;
+    border: 2px solid $border-label-checkbox-active;
+  }
+}

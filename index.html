@@ -8,9 +8,70 @@
   <title>Impact Components</title>
 </head>
 <body>
+
+  <!-- INPUTS -->
   <section class="wrapper-test">
-    <input type="text" class="c-input" placeholder="Name *" >
-    <input type="text" class="c-input" placeholder="Surname *" >
+    <h3 class="header-test">Inputs</h3>
+    <input type="text" class="c-input c-input-normal" placeholder="Name *" >
+
+    <br>
+    <br>
+
+    <div class="o-input-error-wrapper">
+      <input type="text" class="c-input c-input-error" placeholder="Name *">
+      <p>Oops! Sth went wrong...</p>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="o-input-active-wrapper">
+      <p>Name *</p>
+      <input type="text" class="c-input c-input-active" placeholder="Name *">
+    </div>
+
   </section>
+
+  <!-- BUTTONS -->
+  <section class="wrapper-test">
+    <h3 class="header-test">Buttons</h3>
+
+    <button type="button" class="c-button">CANCEL</button>
+    <button type="button" class="c-button c-button-active">CREATE ACCOUNT</button>
+    <button type="button" class="c-button c-button-not-active">CREATE ACCOUNT</button>
+
+  </section>
+
+  <!-- CHECKBOX -->
+  <section class="wrapper-test">
+    <h3 class="header-test">Checkbox</h3>
+    <div class="o-checkbox">
+      <input type="checkbox" id="checkbox001">
+        <label for="checkbox001" class="o-checkbox__label">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="10" viewBox="0 0 14 10">
+            <polygon fill="#FFF" fill-rule="evenodd" points="5 12.192 6.4 10.846 10 14.308 17.6 7 19 8.346 10 17" transform="translate(-5 -7)"/>
+          </svg>
+        </label>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="o-checkbox">
+      <input type="checkbox" id="checkbox002">
+        <label for="checkbox002" class="o-checkbox__label">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="10" viewBox="0 0 14 10">
+            <polygon fill="#FFF" fill-rule="evenodd" points="5 12.192 6.4 10.846 10 14.308 17.6 7 19 8.346 10 17" transform="translate(-5 -7)"/>
+          </svg>
+        </label>
+        <label for="checkbox002">
+          <p> I agree with
+            <a href="#">Terms and Conditions</a>
+            END.
+          </p>
+        </label>
+    </div>
+  </section>
+
 </body>
 </html>
