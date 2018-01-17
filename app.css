@@ -69,3 +69,56 @@
 .o-checkbox input[type="checkbox"]:checked + .o-checkbox__label {
   background-color: #448aff;
   border: 2px solid #448aff; }
+
+.o-select {
+  border: 0;
+  outline: none;
+  width: 100%;
+  font-size: 16px;
+  height: 32px;
+  position: relative;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
+  .o-select__arrow {
+    position: absolute;
+    right: 5px;
+    line-height: 32px;
+    z-index: 1; }
+  .o-select ul {
+    margin: 0;
+    padding: 0;
+    border-radius: 2px;
+    position: absolute;
+    height: 32px;
+    width: 100%;
+    overflow: hidden;
+    top: 0;
+    left: 0; }
+    .o-select ul:hover {
+      height: auto !important;
+      cursor: pointer; }
+      .o-select ul:hover li:first-child {
+        border: 0;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
+      .o-select ul:hover li {
+        border-left: 1px solid rgba(0, 0, 0, 0.2);
+        border-right: 1px solid rgba(0, 0, 0, 0.2); }
+    .o-select ul li:first-child:hover {
+      background-color: #ffffff;
+      height: 32px; }
+    .o-select ul li:first-child {
+      padding: 0; }
+    .o-select ul li {
+      background-color: #ffffff;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      height: 32px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+      z-index: 10;
+      padding: 4px 0 4px 4px; }
+      .o-select ul li:hover {
+        background-color: #f7f7f9;
+        cursor: pointer; }
