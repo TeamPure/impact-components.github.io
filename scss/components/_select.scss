@@ -1,4 +1,6 @@
 $select-border: rgba(0, 0, 0, 0.2);
+$select-li: #f7f7f9;
+$bg-li: #ffffff;
 .o-select{
   border: 0;
   outline: none;
@@ -38,14 +40,14 @@ $select-border: rgba(0, 0, 0, 0.2);
       }
     }
     li:first-child:hover{
-      background-color: #ffffff;
+      background-color: $bg-li;
       height: 32px;
     }
     li:first-child{
       padding: 0;
     }
     li{
-      background-color: #ffffff;
+      background-color: $bg-li;
       display: flex;
       align-items: center;
       height: 32px;
@@ -53,7 +55,7 @@ $select-border: rgba(0, 0, 0, 0.2);
       z-index: 10;
       padding: 4px 0 4px 4px;
       &:hover{
-        background-color: #f7f7f9;
+        background-color: $select-li;
         cursor: pointer;
       }
     }
